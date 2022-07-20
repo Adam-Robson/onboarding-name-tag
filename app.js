@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import functions and grab DOM elements
 const nameInput = document.getElementById('name-input');
 const updateButton = document.getElementById('update-button');
@@ -11,10 +12,14 @@ nameDiv.style.color = 'green';
 // let state
 
 // set event listeners 
-updateButton.addEventListener('click', () => { });
+updateButton.addEventListener('click', () => { 
+let value = nameInput.value;
+nameDiv.textContent = value;
+});
+
   // get user input
   // use user input to update state
-updateButton.addEventListener('click', () => {
+nameInput.addEventListener('input', () => {
     const value = nameInput.value;
     nameDiv.textContent = value;
 });
