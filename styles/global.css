@@ -2,6 +2,7 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 20px;
 }
 
 body {
@@ -32,4 +33,17 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+#name-tag {
+    height: 280px;
+    width: 400px;
+}
+
+#greeting {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+#footer {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }

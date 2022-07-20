@@ -1,4 +1,10 @@
 // import functions and grab DOM elements
+const nameElem = document.getElementById('name');
+nameElem.textContent = 'Benny';
+nameElem.style.color = 'green';
+
+const container = document.getElementById('name-tag');
+container.style.backgroundColor = 'blue';
 
 // let state
 
