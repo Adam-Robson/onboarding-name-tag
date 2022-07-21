@@ -1,30 +1,21 @@
-/* eslint-disable no-unused-vars */
+// eslint-disable no-unused-vars
+
 // import functions and grab DOM elements
+
+// let state, set event listeners 
+
 const nameInput = document.getElementById('name-input');
 const updateButton = document.getElementById('update-button');
-const container = document.getElementById('name-tag');
-const greeting = document.getElementById('greeting');
 const nameDiv = document.getElementById('name');
-nameDiv.textContent = 'Enter name here';
 
-// let state
-
-// set event listeners 
-updateButton.addEventListener('click', () => { 
-    let value = nameInput.value;
-    nameDiv.textContent = value;
+nameInput.addEventListener('input', function() {
+    nameInput.textContent = this.value;
 });
 
-  // get user input
-  // use user input to update state
-nameInput.addEventListener('input', () => {
-    const value = nameInput.value;
+updateButton.addEventListener('click', () => {
+    const value = nameInput.value; 
     nameDiv.textContent = value;
 });
-  // update DOM to reflect the new state
-  
-
-
 
 
 
