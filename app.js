@@ -3,18 +3,16 @@
 const nameInput = document.getElementById('name-input');
 const updateButton = document.getElementById('update-button');
 const container = document.getElementById('name-tag');
-container.style.backgroundColor = 'blue';
 const greeting = document.getElementById('greeting');
 const nameDiv = document.getElementById('name');
 nameDiv.textContent = 'Enter name here';
-nameDiv.style.color = 'green';
 
 // let state
 
 // set event listeners 
 updateButton.addEventListener('click', () => { 
-let value = nameInput.value;
-nameDiv.textContent = value;
+    let value = nameInput.value;
+    nameDiv.textContent = value;
 });
 
   // get user input
