@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,25 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Name-Tag</title>
 </head>
-
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+            <img class="img-l" src="/assets/hellomypleasurethumb.jpeg" />
+            <h1>Your Name Tag Here.</h1>
+            <img class="img-r" src="/assets/hellomypleasurethumb.jpeg" />
     </header>
-
     <main>
-
+        <input type="text" name="name-input" id="name-input" />
+        <button id="update-button">make a name for yourself</button>
+        <div id="name-tag">
+            <div id="greeting">HELLO I'M</div>
+            <div id="name"></div>
+            <div id="footer"></div>
+        </div>
     </main>
-
-    <footer>&copy;2022 Software Developer</footer>
-
     <script type="module" src="app.js"></script>
+    <footer>&copy;  MMXXII Little Baby Software Developer</footer>
 </body>
-
 </html>
