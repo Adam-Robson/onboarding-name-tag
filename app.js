@@ -8,6 +8,7 @@ const nameInput = document.getElementById('name-input');
 const updateButton = document.getElementById('update-button');
 const nameDiv = document.getElementById('name');
 
+
 nameInput.addEventListener('input', function() {
     nameInput.textContent = this.value;
 });
